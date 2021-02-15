@@ -4,9 +4,11 @@
   "description": "Use this to get help with React Testing Library",
   "private": true,
   "dependencies": {
+    "@babel/core": "7.10.1",
     "@babel/plugin-proposal-class-properties": "7.10.4",
     "@babel/preset-env": "7.10.4",
     "@babel/preset-react": "7.10.4",
+    "@babel/register": "7.10.4",
     "@testing-library/react": "11.2.3",
     "@testing-library/user-event": "12.6.0",
     "jsdom": "11.0.0",
@@ -15,6 +17,6 @@
     "react-dom": "16.9.0"
   },
   "scripts": {
-    "test": "mocha ./src/index.test.js --require=./test-setup.js --require=./babel-register.js"
+    "test": "mocha ./src/index.test.js --require=./test-setup.js --require=./babel-register.js --ui=tdd"
   }
 }
